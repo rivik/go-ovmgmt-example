@@ -49,6 +49,7 @@ func main() {
 	}
 
 	ovm.SetStatus3Events(5 * time.Second)
+	_ = ovm.SetByteCountEvents(5 * time.Second)
 
 	//go func() {
 	for evt := range eventCh {
